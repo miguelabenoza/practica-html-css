@@ -1,0 +1,112 @@
+:root {
+    --nav-height: 35px;
+}
+
+.header {
+    font-family: 'outfit';
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-family: 'outfit bold';
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    transition: .2s
+}
+
+.logo-light {
+    color: var(--grey-100);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.input-menu {
+    display: none;
+}
+
+.label-menu {
+    display: flex;
+    align-items: center;
+}
+
+.ul-links {
+    display: none;
+}
+
+
+.talk {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--dark);
+    border: 2px solid var(--grey-10);
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: 0.2s;
+    outline: none;
+
+    .arrow-right {
+        fill: var(--dark);
+        transition: 0.2s;
+    }
+}
+
+.talk:active {
+    color: var(--white);
+    background-color: var(--dark);
+    transition: 0.2s;
+
+    .arrow-right {
+        fill: var(--white);
+        transition: 0.2s;
+    }
+}
+
+.input-menu:checked ~ .ul-links {
+    position: absolute;
+    width: 100%;
+    top: var(--nav-height);
+    height: calc(100vh - var(--nav-height));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    .link-menu,
+    .link-menu-button { font-size: 1.5rem; }
+}
+
+@media (min-width: 460px) {
+    .header { font-size: 1.1rem; }
+    .label-menu { display: none; }
+
+    .ul-links {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+@media (hover: hover) {
+    .logo:hover {
+        opacity: .6;
+        transition: .2s;
+    } 
+
+    .link-menu:hover {
+        color: var(--grey-100);
+        transition: 0.2s;
+    }
+
+    .talk:hover {
+        border: 2px solid var(--dark);
+        transition: 0.2s;
+    }
+}
+

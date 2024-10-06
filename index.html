@@ -4,8 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/header.css">
 </head>
 <body>
-    
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html">
+                <h1 class="logo"><span class="logo-light">open</span>designs.</h1>
+            </a>
+
+            <input class="input-menu" type="checkbox" id="menu" />
+            <label class="label-menu" for="menu">
+                <img
+                    src="assets/icons/menu-open.svg"
+                    alt="icon open menu"
+                />
+            </label>
+
+            <ul class="ul-links">
+                <li class="li-links">
+                    <a class="link-menu" href="#">Skills</a>
+                </li>
+                <li class="li-links">
+                    <a class="link-menu" href="#">Proyects</a>
+                </li>
+                <li class="li-links">
+                    <a class="link-menu-button talk arrow-animation" href="#"
+                        >Let's Talk!
+                        <svg
+                            class="arrow-right"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24px"
+                            viewBox="0 -960 960 960"
+                            width="24px"
+                            fill="#000000"
+                        >
+                            <path
+                                d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"
+                            />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 </body>
 </html>
