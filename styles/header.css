@@ -1,10 +1,13 @@
 :root {
-    --nav-height: 35px;
+    --nav-height: 50px;
 }
 
 .header {
     font-family: 'outfit';
     padding: 1rem 2rem;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
 }
 
 .logo {
@@ -23,6 +26,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    font-size: 1.3rem;
 }
 
 .input-menu {
@@ -68,6 +72,7 @@
 }
 
 .input-menu:checked ~ .ul-links {
+    background-color: var(--grey-10);
     position: absolute;
     width: 100%;
     top: var(--nav-height);
@@ -77,9 +82,7 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
-
-    .link-menu,
-    .link-menu-button { font-size: 1.3rem; }
+    font-size: 1.7rem;
 }
 
 @media (min-width: 460px) {

@@ -23,12 +23,13 @@
 
 :root {
     /* Fonts */
-    font-family: outfit;
-    font-family: outfit-bold;
+    font-family: 'outfit';
+    font-family: 'outfit bold';
 
     /* Colors */
     --white: #fff;
     --grey-10: #e5e7eb;
     --grey-100: #b6bcc6;
     --dark: #030712;
+    --dark-10:#374151;
 }
