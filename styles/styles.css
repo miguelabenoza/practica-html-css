@@ -8,6 +8,19 @@
     src: url(../assets/fonts/Outfit-Bold.ttf);
 }
 
+:root {
+    /* Fonts */
+    --font-regular: 'outfit';
+    --font-bold: 'outfit bold';
+
+    /* Colors */
+    --white: #fff;
+    --grey-10: #e5e7eb;
+    --grey-100: #b6bcc6;
+    --dark: #030712;
+    --dark-10:#374151;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -19,17 +32,4 @@
     }
 
     ul li { list-style: none; }
-}
-
-:root {
-    /* Fonts */
-    font-family: 'outfit';
-    font-family: 'outfit bold';
-
-    /* Colors */
-    --white: #fff;
-    --grey-10: #e5e7eb;
-    --grey-100: #b6bcc6;
-    --dark: #030712;
-    --dark-10:#374151;
 }
