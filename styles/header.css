@@ -79,7 +79,7 @@
     gap: 3rem;
 
     .link-menu,
-    .link-menu-button { font-size: 1.5rem; }
+    .link-menu-button { font-size: 1.3rem; }
 }
 
 @media (min-width: 460px) {
