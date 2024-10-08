@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/form.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html">
+                <h1 class="logo"><span class="logo-light">open</span>designs.</h1>
+            </a>
+
+            <input class="input-menu" type="checkbox" id="menu" />
+            <label class="label-menu" for="menu">
+                <img
+                    src="assets/icons/menu-open.svg"
+                    alt="icon open menu"
+                />
+            </label>
+
+            <ul class="ul-links">
+                <li class="li-links">
+                    <a class="link-menu" href="#">Skills</a>
+                </li>
+                <li class="li-links">
+                    <a class="link-menu" href="#">Proyectos</a>
+                </li>
+                <li class="li-links">
+                    <a class="link-menu-button talk arrow-animation" href="#"
+                        >Contacto
+                        <svg
+                            class="arrow-right"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24px"
+                            viewBox="0 -960 960 960"
+                            width="24px"
+                            fill="#000000"
+                        >
+                            <path
+                                d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"
+                            />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+</nav>
+    </header>
+
+    <main>
+        <section>
+
+            <div class="info">
+                <h2 class="title">
+                    <span class="text-light">Di hola!</span> y cuéntame tu idea
+                </h2>
+    
+                <p class="subtitle">¿Tienes buenos trabajos? Comuníquese y charlemos.</p>
+            </div>
+
+            <form class="formulario" method="post" autocomplete="off">
+                <div class="form-col">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required />
+                </div>
+
+                <div class="form-col">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos" required />
+                </div>
+
+                <div class="form-col">
+                    <label for="tel">Teléfono móvil (xxx-xxx-xxx)</label>
+                    <input type="tel" id="tel" name="telefono" placeholder="xxx-xxx-xxx" maxlength="11" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" title="Format (612-345-789)" required />
+                </div>
+
+                <fieldset>
+                    <legend>¿Cómo me conociste?</legend>
+                    <div class="form-col">
+                        <div class="form-row">
+                            <input
+                                type="radio"
+                                id="universidad"
+                                name="question"
+                                value="universidad"
+                                required
+                            />
+                            <label for="universidad">Universidad</label>
+                        </div>
+                    </div>
+
+                    <div class="form-col">
+                        <div class="form-row">
+                            <input
+                            type="radio"
+                            id="keepcoding"
+                            name="question"
+                            value="keepcoding"
+                            required
+                            />
+                            <label for="keepcoding">Keepcoding kick-off</label>
+                        </div>
+                    </div>
+
+                    <div class="form-col">
+                        <div class="form-row">
+                            <input
+                                type="radio"
+                                id="colegio"
+                                name="question"
+                                value="colegio"
+                                required
+                            />        
+                            <label for="colegio">Colegio</label>
+                        </div>
+                    </div>
+
+                    <div class="form-col">
+                        <div class="form-row">
+                            <input
+                                type="radio"
+                                id="github"
+                                name="question"
+                                value="github"
+                                required
+                            />
+                            <label for="github">Github</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="form-col">
+                    <label for="textarea">Más información:</label>
+                    <textarea
+                        name="textarea"
+                        id="textarea"
+                        maxlength="180"
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="form-col">
+                    <label for="user_github">Github username: @username</label>
+                    <input type="text" id="user_github" name="user_github" pattern="^@[^\s]+" placeholder="@username" title="Format (@username)" required />
+                </div>
+                
+                <div class="form-row">
+                    <input type="checkbox" id="newsletter" name="newsletter" >
+                    <label for="newsletter">Únete a nuestra Newsletter</label>
+                </div>
+
+                <button type="reset">Reset</button>
+                <button type="submit">Save</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
