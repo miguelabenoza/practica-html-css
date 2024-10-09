@@ -33,7 +33,7 @@ section {
     display: flex;
     flex-direction: column;
     gap:1rem;
-
+    margin-bottom: 2rem;
 }
 
 .form-col{
@@ -50,6 +50,7 @@ section {
 
 .form-buttons {
     display: flex;
+    justify-content: center;
     gap: 1rem;
     margin:1rem 0rem;
 }
