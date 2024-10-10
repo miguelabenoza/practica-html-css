@@ -4,14 +4,14 @@
 }
 
 @font-face {
-    font-family: 'outfit bold';
-    src: url(../assets/fonts/Outfit-Bold.ttf);
+    font-family: 'outfit light';
+    src: url(../assets/fonts/Outfit-Light.ttf);
 }
 
 :root {
     /* Fonts */
     --font-regular: 'outfit';
-    --font-bold: 'outfit bold';
+    --font-light: 'outfit light';
 
     /* Colors */
     --white: #fff;
@@ -32,6 +32,10 @@
     }
 
     ul li { list-style: none; }
+}
+
+.container {
+    padding: 0 2rem;
 }
 
 .btn {
