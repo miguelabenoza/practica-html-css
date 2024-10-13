@@ -1,0 +1,42 @@
+.banner {
+    position:relative;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+    
+    .banner-link {
+        position: relative;
+        display: flex;
+        align-self: center;
+
+        font-family: var(--font-regular);
+        color: var(--dark);
+        text-transform: uppercase;
+        background-color: var(--white);
+        padding: 1rem 2rem;
+        border-radius: 6px;
+        z-index: 10;
+    }
+}
+
+.banner-img {
+    position: absolute;
+    background-image: url(../assets/images/grid/6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@media (min-width: 576px) {
+    .banner-img {
+        max-width: 1280px;
+        border-radius: 6px;
+        background-image: url(../assets/images/grid/1.jpg);
+    }
+}
